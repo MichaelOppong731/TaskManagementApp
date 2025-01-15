@@ -8,7 +8,7 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ role }) => {
-  const { isAuthenticated, signinRedirect, signoutRedirect } = useAuth();
+  const { isAuthenticated, signinRedirect } = useAuth();
   const [loading, setLoading] = useState<boolean>(true);
   const navigate = useNavigate();
 

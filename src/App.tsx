@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import{ useEffect, useState } from "react";
 import { useAuth } from "react-oidc-context";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./pages/Layout"; // Import Layout component
@@ -10,7 +10,7 @@ import CreateTask from "./pages/CreateTask";
 function App() {
   const auth = useAuth();
   const [role, setRole] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [_loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   // Fetch user details and role

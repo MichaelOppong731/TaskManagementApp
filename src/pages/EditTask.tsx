@@ -71,7 +71,6 @@ const EditTask: React.FC = () => {
         throw new Error('Failed to update task');
       }
 
-      const data = await response.json();
       setSuccess('Task updated successfully');
       navigate('/Admin-dashboard'); // Redirect to the dashboard after success
     } catch (err) {
